@@ -1,0 +1,89 @@
+*{
+    margin: 0px ;
+    padding: 0px ;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0px;
+    flex-direction: column;
+    background-image: url("./img/pexels-photo.webp");
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container{
+    /* width: 40%; */
+    padding: 10px;
+    background-color: rgba(158, 174, 228, 0.58);
+    border-radius: 20px;
+}
+h1{
+    padding: 10px;
+    color: blueviolet;
+}
+input{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+button{
+    padding: 10px;
+    margin: 20px 10px;
+
+    background-color: green;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+
+}
+
+.box{
+    background-color: rgba(255, 255, 255, 0.338);    
+    margin-top: 30px;
+    padding: 10px 20px;
+    box-shadow: 1px 1px 10px 6px gray;
+    border-radius: 20px;
+   
+    
+}
+
+.box img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.box p{
+    font-size: 18px;
+    padding: 5px;
+    /* margin: 10px 10px; */
+    color: chocolate;
+    text-align: start;
+}
+
+
+.Not-found{
+    background-color: gray;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    margin: 10px auto;
+    font-size: 30px;
+    font-family: cursive;
+    position: absolute;
+    top: 70%;
+
+}
+.left{
+    margin-left: 10px;
+}
