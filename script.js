@@ -12,7 +12,7 @@ button.addEventListener("click", () => {
   .then((Response) => Response.json())
   .then((data) => {
     console.log(data);
-    if (data.hireable == true) {
+    if (data) {
       let box = document.createElement("div");
       let avatar_url = data.avatar_url;
       let name = data.name;
