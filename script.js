@@ -2,6 +2,8 @@ let button = document.querySelector("button");
 
 let container = document.querySelector(".container");
 
+let outputContainer = document.querySelector(".output_container")
+
 button.addEventListener("click", () => {
   let username = document.querySelector("input").value;
   let api = "https://api.github.com/users/";
@@ -32,8 +34,8 @@ button.addEventListener("click", () => {
    <p>Publich Gists : <span class="left">${gists}</span></p>
    </div>
         `;
-      
-        document.body.append(box);
+        outputContainer.innerHTML = ""
+        outputContainer.append(box);
       } else if (data.message == "Not Found") {
         let div = document.createElement("div");
         div.classList.add("Not-found");
