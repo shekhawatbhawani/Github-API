@@ -1,26 +1,26 @@
 let button = document.querySelector("button");
 
 let container = document.querySelector(".container");
-let box = document.createElement("div");
 
 button.addEventListener("click", () => {
   let username = document.querySelector("input").value;
   let api = "https://api.github.com/users/";
-
+  
   let API = api + username;
-
+  
   fetch(API)
-    .then((Response) => Response.json())
-    .then((data) => {
-      console.log(data);
-      if (data.hireable == true) {
-        let avatar_url = data.avatar_url;
-        let name = data.name;
-        let bio = data.bio;
-        let follower = data.followers;
-        let following = data.following;
-        let pulic = data.public_repos;
-        let gists = data.public_gists;
+  .then((Response) => Response.json())
+  .then((data) => {
+    console.log(data);
+    if (data.hireable == true) {
+      let box = document.createElement("div");
+      let avatar_url = data.avatar_url;
+      let name = data.name;
+      let bio = data.bio;
+      let follower = data.followers;
+      let following = data.following;
+      let pulic = data.public_repos;
+      let gists = data.public_gists;
         box.innerHTML = `
           <div class="box">
    <img src="${avatar_url}" alt="">
